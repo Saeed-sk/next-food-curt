@@ -14,6 +14,7 @@ export function AuthContextProvider(props) {
 
     const [auth, setAuth] = useState(dummyAuth.login[0]);
     const [loggedIn, setLoggedIn] = useState(false);
+    const dummy = dummyAuth.login;
 
     function setAuthData(data) {
         setAuth(data);

@@ -4,6 +4,7 @@ import backup from "../../public/assets/navbar/backup.svg"
 import Image from "next/image";
 import HoverElem from "@/components/navbar/HoverElem";
 import {useState} from "react";
+import Link from "next/link";
 
 function Navbar() {
     const [inProp, setInProp] = useState(false)
@@ -15,15 +16,20 @@ function Navbar() {
                     type="search" name="search" id="search" placeholder={"جستجو"}/>
             </div>
             <ul className={" font-bold text-2xl flex flex-row-reverse md:gap-14 "}>
-                <li className={"group flex text-gray-500 hover:text-[#117300] cursor-pointer text-xl "}>
-                    <Image className={"h-8 w-8 pl-2"} src={about} alt={"about svg"}></Image>
-                    <h2>درباره ما</h2>
-                </li>
-                <li className={"group flex text-gray-500 hover:text-[#117300] cursor-pointer text-xl    "}>
-                    <Image className={"h-8 w-8 pl-2"} src={backup} alt={"backup svg"}></Image>
-                    <h2>پشتیبانی</h2>
-                </li>
-                <li className={"group flex text-gray-500 hover:text-[#117300] cursor-pointer text-xl relative"} onMouseEnter={() => setInProp(true)} onMouseLeave={() => setInProp(false)}>
+                <Link href={'about-us'}>
+                    <li className={"group flex text-gray-500 hover:text-[#117300] cursor-pointer text-xl "}>
+                        <Image className={"h-8 w-8 pl-2"} src={about} alt={"about svg"}></Image>
+                        <h2>درباره ما</h2>
+                    </li>
+                </Link>
+                <Link replace href={"/support"}>
+                    <li className={"group flex text-gray-500 hover:text-[#117300] cursor-pointer text-xl    "}>
+                        <Image className={"h-8 w-8 pl-2"} src={backup} alt={"backup svg"}></Image>
+                        <h2>پشتیبانی</h2>
+                    </li>
+                </Link>
+                <li className={"group flex text-gray-500 hover:text-[#117300] cursor-pointer text-xl relative"}
+                    onMouseEnter={() => setInProp(true)} onMouseLeave={() => setInProp(false)}>
                     <Image className={"h-8 w-8 pl-2"} src={rest} alt={"restaurant svg"}></Image>
                     <h2>رستوران ها</h2>
                     <div
