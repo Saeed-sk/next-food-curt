@@ -12,7 +12,8 @@ module.exports = {
           'bg_search' : "url('../public/assets/navbar/search.svg')",
           'bg_next_product' : "url('../public/assets/product-slider-icons/next.svg')",
           'bg_prev_product' : "url('../public/assets/product-slider-icons/prev.svg')",
-          'cart-bg' : "url('../public/assets/sidebar/cart.svg')"
+          'cart-bg' : "url('../public/assets/sidebar/cart.svg')",
+          'support-bg' : "url('../public/assets/Support/wave-haikei.svg')",
         },
       },
   },
