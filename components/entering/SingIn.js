@@ -11,7 +11,7 @@ function SingIn(props) {
     }
     return (
         <Fragment>
-            <section className={"bg-[url('../public/assets/login/circle1.svg')] bg-center bg-no-repeat bg-cover p-28 flex flex-row justify-center items-center md:gap-28 "}>
+            <section className={"bg-[url('../public/assets/login/circle1.svg')] bg-center bg-no-repeat bg-cover h-screen flex flex-row justify-center items-center md:gap-28 "}>
                 <div>
                     <form className={"flex flex-col gap-10 font-bold glass-bg p-10 scale-in-center"}>
                         <Image className={"mx-auto animate-pulse"} src={icon} alt={"svg icon"}></Image>
@@ -45,7 +45,7 @@ function SingIn(props) {
                         </div>
                     </form>
                 </div>
-                <div className="slide-in-elliptic-top-fwd vibrate">
+                <div className="slide-in-elliptic-left-fwd vibrate">
                     <Image className={"w-[600px]"} src={vector} alt={vector}></Image>
                 </div>
             </section>

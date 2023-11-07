@@ -17,12 +17,9 @@ export default function entering() {
 
     return (
         <Fragment>
-
-            {/*<div className="container mx-auto">*/}
             {selectRole && <SelectRole selectrole={selectRoleFn} role={selectRole}/>}
             {!selectRole && login && <Login setLogin={setLogin} login={login}/>}
             {!selectRole && !login && <SingIn setLogin={setLogin}/>}
-            {/*</div>*/}
         </Fragment>
     )
 }

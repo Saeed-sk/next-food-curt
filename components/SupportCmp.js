@@ -26,7 +26,7 @@ function SupportCmp(props) {
                         <tbody>
                         <tr className="border-b bg-[#F0F0F0] hover:bg-gray-300">
                             <th scope="row" className="px-24 py-4 font-medium text-gray-900 whitespace-nowrap">
-                                099911123123
+                                0999000000
                             </th>
                             <td className="px-24 py-4">
                                 مدیریت سایت
@@ -37,7 +37,7 @@ function SupportCmp(props) {
                         </tr>
                         <tr className="border-b bg-white hover:bg-gray-300">
                             <th scope="row" className="px-24 py-4 font-medium text-gray-900 whitespace-nowrap">
-                                09991112222
+                                0999000000
                             </th>
                             <td className="px-24 py-4">
                                 مدیریت منابع
@@ -48,7 +48,7 @@ function SupportCmp(props) {
                         </tr>
                         <tr className="border-b bg-[#F0F0F0] hover:bg-gray-300">
                             <th scope="row" className="px-24 py-4 font-medium text-gray-900 whitespace-nowrap">
-                                099911121224
+                                0999000000
                             </th>
                             <td className="px-24 py-4">
                                 بخش تغذیه

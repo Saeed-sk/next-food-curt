@@ -10,7 +10,7 @@ export default function Kitchens(props) {
     return (
         <CSSTransition nodeRef={nodeRef} in={props.inProp} timeout={(props.score*100)+2000} classNames="nav">
             <div ref={nodeRef}
-                 style={{animationDelay:(props.key*10)+100+"ms"}}
+                 style={{animationDelay:(props.score*10)+100+"ms"}}
                 className={"w-[350px] h-[77px] text-black bg-white text-center flex justify-around px-3 items-center shadow-zinc-900 my-1 hover:shadow-xl border-b-2 relative hover:z-50"}>
                 <Image width={80} height={80} src={face} alt={"sticker for rest"}></Image>
                 <div className={"flex flex-col gap-3"}>

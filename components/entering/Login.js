@@ -40,7 +40,7 @@ function Login(props) {
     return (
         <Fragment>
             <section
-                className={"bg-[url('../public/assets/login/circle1.svg')] bg-center bg-no-repeat bg-cover p-48 flex flex-row-reverse justify-center items-center md:gap-28 "}>
+                className={"bg-[url('../public/assets/login/circle1.svg')] bg-center bg-no-repeat bg-cover h-screen flex flex-row-reverse justify-center items-center md:gap-28"}>
                 <div>
                     <form className={"flex flex-col gap-10 font-bold glass-bg p-10 scale-in-center"}
                           onSubmit={loginSubmitHandel}>
@@ -72,7 +72,7 @@ function Login(props) {
                         </div>
                     </form>
                 </div>
-                <div className="slide-in-elliptic-top-fwd ">
+                <div className="slide-in-elliptic-right-fwd">
                     <Image className={"w-[600px]"} src={vector} alt={vector}></Image>
                 </div>
             </section>
