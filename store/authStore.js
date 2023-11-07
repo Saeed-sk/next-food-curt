@@ -19,6 +19,11 @@ export function AuthContextProvider(props) {
     function setAuthData(data) {
         setAuth(data);
         setAuth(dummy.filter(dummyAuth => dummyAuth.name === data.userName))
+        if (auth.length === 1)
+            setLoggedIn(true)
+        else
+            setLoggedIn(false);
+        return loggedIn;
     }
 
     function login() {

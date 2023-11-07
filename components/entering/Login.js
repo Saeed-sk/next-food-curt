@@ -7,7 +7,7 @@ import {redirect, useRouter} from "next/navigation";
 
 
 function Login(props) {
-     const router = useRouter()
+    const router = useRouter()
     const context = useContext(AuthContext);
     const [userData, setUserData] = useState({
         userName: '',
@@ -32,9 +32,7 @@ function Login(props) {
     function loginSubmitHandel(e) {
         e.preventDefault();
         context.setAuthData(userData)
-         if (context.login()){
-             router.replace('/')
-         }
+        router.replace('/')
     }
 
     return (
